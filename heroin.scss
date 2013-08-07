@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Denk+One|Open+Sans:300italic,400,700,800);
+
+$headline-color: #808040;
+$link-color: #6B8B26;
+html,body {
+	background-color: #E4E498;
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    color: darken($link-color,10%);
+  }
+}
+.title {
+	h1 {
+		font-size: 72px;
+		font-family: 'Denk One';
+		color: $headline-color;
+		margin-bottom: 0;
+	}
+	h2 {
+		color: #2e2e2e;
+		font-family: 'Open Sans';
+		font-weight: 300;
+		font-style: italic;
+		font-size: 32px;
+		margin-top: 0;
+	}
+}
+.needle {
+  img {
+    min-width: 50%;
+    max-width: 90%;
+  }
+}
+section {
+  margin-top: 50px;
+  h2 {
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 50px;
+    color: darken($headline-color,20%);
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 130%;
+    font-family: 'Open Sans';
+    &.console {
+      border-radius: 10px;
+      padding: 10px;
+      font-weight: 400;
+      font-size: 18px;
+      background-color: #000;
+      color: #fff;
+      &:before{
+        content: "addict@rehab:~$ ";
+        color: #1bba00;
+      }
+    }
+    &.code {
+      background-color: #272822;
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      font-weight: 400;
+      font-size: 18px;
+      span {
+        display: block;
+      }
+      .comment {
+        color: #666;
+      }
+      .indent-1 {
+        padding-left: 20px;
+      }
+      .indent-2 {
+        padding-left: 40px;
+      }
+      em {
+        font-style: normal;
+        &.blue {
+          color: #7ad3db;
+          font-style: italic;
+        }
+        &.pink {
+          color: #E01143;
+        }
+        &.yellow {
+          color: #e9d687;
+        }
+      }
+    }
+    &.large {
+      font-size: 50px;
+    }
+  }
+}
+
+.faq {
+  ul {
+    list-style: none;
+    p {
+      margin-bottom: 0;
+    }
+    li {
+      margin-bottom: 30px;
+    }
+    strong {
+      font-size: 32px;
+    }
+  }
+}
+
+.footer {
+  bottom: 0;
+  text-align: center;
+  
+}
